@@ -59,7 +59,7 @@
       if (cb) cb(rt, list.slice(max));
       return rt;
     }
-    if (cb) cb(list)
+    if (cb) cb(list, [])
     return list;
   };
 
