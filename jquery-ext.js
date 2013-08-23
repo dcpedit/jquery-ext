@@ -83,7 +83,7 @@
     if (!this.mousewheel) return;
     this.mousewheel(function(ev, d, dx, dy) {
       var scroll = this;
-      var val = scroll.offsetTop + dy;
+      var val = scroll.offsetTop + (dy || d*40);
       var offsetHeight = 0 - scroll.offsetHeight + 300;
 
       if (val > 0) {
