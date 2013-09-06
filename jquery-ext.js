@@ -22,7 +22,7 @@
   }
 
   $.fn.templateText = function() {
-    return this.html().replace(_tmplRegex, '');
+    return (this.html() || '').replace(_tmplRegex, '');
   };
 
   $.fn.mustacheCompile = function () {
